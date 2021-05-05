@@ -28,6 +28,11 @@ a{
 
 .intro img{
   min-width: 100%;
+  animation: fadeIn 4s;
+}
+
+.intro .ptext{
+  animation: fadeIn 3s;
 }
 
 .pimg2{
@@ -153,4 +158,9 @@ section{
   body, html{
     font-size:3vw
   }
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
