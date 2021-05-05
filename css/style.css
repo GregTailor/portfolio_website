@@ -161,6 +161,21 @@ ul {
   margin-bottom: 10px;
 }
 
+#projects .main-container {
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+
+.slideshow-card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  animation: fadeIn 1s;
+}
+
+.card-container{
+  padding: 2px 16px;
+}
+
 .hideme{
   opacity: 0;
 }

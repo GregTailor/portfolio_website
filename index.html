@@ -166,39 +166,43 @@
     </div>
   </div>
 
-  <section class="hideme" id="education">
+  <section id="education">
     <div class="main-container">
       <div>
-        <h2 class="place">Tóth Árpád Secondary School</h2>
-        <ul>
-          <li>
-            <div class="date">2012 - 2015</div>
-            <div class="experience">
-              I was part of a class where we studied English and German languages as advanced level subjects.
-            </div>
-          </li>
-          <li>
-            <div class="date">2015 - 2017</div>
-            <div class="experience">
-              I became part of the International Baccalaureate class in the school, where I studied Hungarian literature, Biology and History as standard level subjects, and I studied English, <b>Mathematics</b> and <b>Computer Science</b> as my higher level subjects. This is where I realized, that I wanted to become a software engineer.
-            </div>
-          </li>
-        </ul>
-        <h2 class="place">Univeristy of Debrecen,<br>Computer science</h2>
-        <ul>
-          <li>
-            <div class="date">2017 - 2019</div>
-            <div class="experience">
-              After my first year at the univeristy, I became an intern, and my focus from it has shifted, as it became apparent how much more I am learning at my job.
-            </div>
-          </li>
-          <li>
-            <div class="date">2019 - Present</div>
-            <div class="experience">
-              I continued university on correspondence course, to make time for my full time job. As of now, I have completed all of my credits, and my thesis is waiting to be finished.
-            </div>
-          </li>
-        </ul>
+        <div class="hideme">
+          <h2 class="place">Tóth Árpád Secondary School</h2>
+          <ul>
+            <li>
+              <div class="date">2012 - 2015</div>
+              <div class="experience">
+                I was part of a class where we studied English and German languages as advanced level subjects.
+              </div>
+            </li>
+            <li>
+              <div class="date">2015 - 2017</div>
+              <div class="experience">
+                I became part of the International Baccalaureate class in the school, where I studied Hungarian literature, Biology and History as standard level subjects, and I studied English, <b>Mathematics</b> and <b>Computer Science</b> as my higher level subjects. This is where I realized, that I wanted to become a software engineer.
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="hideme">
+          <h2 class="place">Univeristy of Debrecen,<br>Computer science</h2>
+          <ul>
+            <li>
+              <div class="date">2017 - 2019</div>
+              <div class="experience">
+                After my first year at the univeristy, I became an intern, and my focus from it has shifted, as it became apparent how much more I am learning at my job.
+              </div>
+            </li>
+            <li>
+              <div class="date">2019 - Present</div>
+              <div class="experience">
+                I continued university on correspondence course, to make time for my full time job. As of now, I have completed all of my credits, and my thesis is waiting to be finished.
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -211,20 +215,25 @@
     </div>
   </div>
 
-  <section class="hideme">
+  <section class="" id="projects">
     <div class="main-container">
-      <div class="left-column">
-        <div>
-          <h2>More about me</h2>
-          <p>
-            I am currently working as a software engineer, mostly focusing on building test automation solutions for web applications with the help of <b>Python</b> and <b>Java</b> programming langauges. As a hobby, I like to learn web development.
-          </p>
+      <button onclick="plusDivs(-1)">&#10094;</button>
+      <div class="slideshow-card">
+        <img src="img/gregtailor.jpg" alt="Avatar" style="width:250px">
+        <div class="card-container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
         </div>
       </div>
-      <div class="right-column"></div>
+      <div class="slideshow-card">card2</div>
+      <div class="slideshow-card">card3</div>
+      <div class="slideshow-card">card4</div>
+      <div class="slideshow-card">card5</div>
+      <button onclick="plusDivs(+1)">&#10095;</button>
     </div>
   </section>
 
   <script src="fade.js"></script>
+  <script src="slideshow.js"></script>
 </body>
 </html>
