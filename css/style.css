@@ -62,7 +62,6 @@ a{
 }
 
 section{
-  text-align:center;
   background-color:#282e34;
   color:#ddd;
 }
@@ -85,18 +84,19 @@ section{
 .main-container{
   max-width: 1200px;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 350px;
+  padding: 15px 0;
 }
 
 .main-container p, h1, h2{
   padding: 8px;
 }
 
-.main-container .right-column{
+#contact .left-column{
+  text-align: center;
+}
+
+#contact .right-column{
   text-align: right;
-  /* margin: auto; */
 }
 
 .left-column, .right-column {
@@ -127,6 +127,39 @@ section{
   fill:#ddd;
 }
 
+.two-column-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#skills ul {
+  list-style: circle;
+  margin-right: 50px;
+}
+
+#experience .main-container, #education .main-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.place {
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.date {
+  margin-top: 20px;
+}
+
+.experience{
+  margin-bottom: 10px;
+}
 
 .hideme{
   opacity: 0;
@@ -139,12 +172,20 @@ section{
   }
   .main-container{
 		grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+  .two-column-container{
+    grid-template-columns: 1fr;
   }
   .icon-container{
     justify-content: center;
   }
-  .main-container .right-column {
+  .right-column, .left-column {
     text-align: center;
+  }
+  #skills ul {
+    list-style: none;
+    margin-right: 0px;
   }
   .main-container img{
     padding-top: 15px
