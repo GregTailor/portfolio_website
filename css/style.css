@@ -4,6 +4,7 @@ body, html{
   margin:0;
   font-size: 1vw;
   font-family:'Roboto Mono', monospace;
+  background-color: #282e34;
 }
 
 p, h1, h2 {
@@ -17,7 +18,7 @@ p, h1, h2 {
   background-size:cover;
   background-repeat:no-repeat;
   background-attachment:fixed;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 
 .pimg1{
@@ -94,6 +95,10 @@ section{
 
 .card-container {
   padding: 0px 16px;
+}
+
+.hideme{
+  opacity: 0;
 }
 
 @media(max-width:800px){
