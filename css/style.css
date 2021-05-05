@@ -12,7 +12,12 @@ p, h1, h2 {
   margin:0;
 }
 
-.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+a{
+  text-decoration: none;
+  color:#ddd;
+}
+
+.pimg2, .pimg3, .pimg4, .pimg5{
   position:relative;
   background-position:center;
   background-size:cover;
@@ -21,9 +26,8 @@ p, h1, h2 {
   /* opacity: 0.8; */
 }
 
-.pimg1{
-  background-image:url('../img/about.jpg');
-  min-height:100%;
+.intro img{
+  min-width: 100%;
 }
 
 .pimg2{
@@ -97,16 +101,41 @@ section{
   padding: 0px 16px;
 }
 
+.icon-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon{
+  max-width: 50px;
+  flex: 1;
+  margin: 15px 10px;
+}
+
+.icon a svg {
+  fill:#ddd;
+}
+
+
 .hideme{
   opacity: 0;
 }
 
 @media(max-width:800px){
+  .pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+    background-attachment: scroll;
+  }
   .main-container{
 		grid-template-columns: 1fr;
   }
+  .icon-container{
+    justify-content: center;
+  }
   .main-container .right-column {
     text-align: center;
+  }
+  .main-container img{
+    padding-top: 15px
   }
   .ptext{
     font-size:6vw;
