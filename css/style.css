@@ -61,7 +61,7 @@ a{
   background-image:url('../img/code5.jpg');
 }
 
-section{
+section, footer{
   background-color:#282e34;
   color:#ddd;
 }
@@ -142,6 +142,10 @@ section{
   grid-template-columns: 2fr 1fr;
 }
 
+.single-container{
+  padding: 8px 8px
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -161,19 +165,10 @@ ul {
   margin-bottom: 10px;
 }
 
-#projects .main-container {
-  width: 800px;
-  display: grid;
-  grid-template-columns: 1fr 6fr 1fr;
-}
-
-.slideshow-card{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  animation: fadeIn 1s;
-}
-
-.card-container{
-  padding: 2px 16px;
+footer h2{
+  float:right;
+  font-family:'Space Mono', monospace;
+  padding: 0 20px;
 }
 
 .hideme{
